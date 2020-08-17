@@ -1,0 +1,51 @@
+open git bash in the project folder.
+create commit1_master.txt and do git init.
+creates an empty repo.
+git status shows the file remaining to be staged.
+git add . (stages)
+git commit -m"initial commit".
+
+git branch Develop (creates branch develop)
+git checkout Develop (switches to branch)
+make commit1_Develop.txt file.
+git status
+git add .
+git commit -m"first commit on Develop".
+
+git checkout master (switches to branch)
+make commit2_master.txt file.
+git status
+git add .
+git commit -m"second commit on master".
+
+git checkout Develop (switches to branch)
+make commit2_Develop.txt file.
+git status
+git add .
+git commit -m"second commit on Develop".
+
+git checkout master (switches to branch master)
+git merge Develop (merges branch Develop to master)
+
+git branch spider( makes branch spider)
+git checkout spider (switches to branch spider)
+git branch (to check branches)
+
+make commit1_spider.txt and write the content
+git add .
+git commit -m"first commit on spider"
+make commit2_spider.txt file and write the content.
+git add .
+git commit -m"second commit on spider"
+
+git checkout master (switches to branch master)
+git merge spider (merges branch spider to master)
+
+delete both branches by :
+git branch -d spider
+git branch -d Develop
+
+git push origin master to repo.
+
+
+
